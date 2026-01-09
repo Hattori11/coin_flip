@@ -4,7 +4,7 @@ import time as t
 
 class Coin:
     def __init__(self):
-        self.sides = ["Cara", "Coroa"]
+        self.sides = ["cara", "coroa"]
 
     def throw_up(self):
         """Escolhe um dos lados da moeda aleatoriamente"""

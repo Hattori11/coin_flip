@@ -1,6 +1,6 @@
 from classes.coin import Coin
 from classes.player import Player
-from utils import decide_first_choice
+from utils import decide_first_choice, opposite_side
 
 
 def main():
@@ -15,8 +15,10 @@ def main():
         first = decide_first_choice(player_one.name, player_two.name)
         if first == player_one.name:
             player_one.choice_side_coin()
+            player_two.choice = opposite_side(player_one.choice)   
         else:
             player_two.choice_side_coin()
+            player_one.choice = opposite_side(player_two.choice)
 
         side = coin.throw_up()
 
