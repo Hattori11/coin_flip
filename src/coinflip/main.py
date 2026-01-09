@@ -1,6 +1,6 @@
-from classes.coin import Coin
-from classes.player import Player
-from utils import decide_first_choice, opposite_side
+from coinflip.classes.coin import Coin
+from coinflip.classes.player import Player
+from coinflip.utils import decide_first_choice, opposite_side
 
 
 def main():
